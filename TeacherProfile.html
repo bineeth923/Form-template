@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="TeacherProfile.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Welcome teacher</title>
+</head>
+
+<body>
+    <h1>Survey name..</h1>
+    <div class="panel-group" id="question_list">
+        <div class=" panel panel-info">
+            <!--This is a mcq question-->
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#question1">
+                        A sample MCQ question
+                    </a>
+                </h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    <ul>
+                        <li>Option 1</li>10<br><br>
+                        <li>Option 2</li>13<br><br>
+                        <li>Option 3</li>30<br><br>
+                        <li>Option 4</li>40<br><br>
+                    </ul>
+                </div>
+            </div>
+            <!--First question ends here(MCQ)-->
+            <!--This is a checkbox question-->
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#question2">
+                        A sample Checkbox question
+                    </a>
+                </h4>
+            </div>
+            <div id="question2" class="panel-collapse collapse ">
+                <div class="panel-body">
+
+                </div>
+            </div>
+            <!--Second question ends here(Checkbox)-->
+            <!--This is a single line text question-->
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#question3" onclick="document.getElementById('question3').style.display='block';document.getElementById('question3').style.overflow='hidden'" >
+                        A sample Single line text question
+                    </a>
+                </h4>
+            </div>
+            <div id="question3" class="modal">
+                <button onclick="document.getElementById('question3').style.display='none' " class="close" title="Close Modal">&times;</button>
+                <div class="modal-content animate">
+                    <label id="singleLineText">
+                        <h3>Students feedback</h3><br><br>
+                        <p>
+                            Shorthand property to set values the thickness of the padding area. 
+                            If left is omitted, it is the same as right. If bottom is omitted it is 
+                            the same as top, if right is omitted it is the same as top. The value may 
+                            not be negative
+                        </p>
+                        <hr/>
+                        <p>
+                            Attaches one or more drop-shadows to the box. The property is a comma-separated 
+                            list of shadows, each specified by 2-4 length values, an optional color, and an 
+                            optional 'inset' keyword. Omitted lengths are 0; omitted colors are a user agent 
+                            chosen color.  
+                        </p>
+                        <hr/>
+                    </label>
+                </div>
+            </div>
+            <!--Third question ends here(Checkbox)-->
+            <!--This is a Multiline text line text question-->
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#question4"  onclick="document.getElementById('question4').style.display='block';document.getElementById('question4').style.overflow='hidden'">
+                        A sample Multi line text question
+                    </a>
+                </h4>
+            </div>
+            <div id="question4" class="modal">
+                <button onclick="document.getElementById('question4').style.display='none' " class="close" title="Close Modal">&times;</button>
+                <div class="modal-content animate">
+                    <label id="singleLineText">
+                        <h3>Students feedback</h3><br><br>
+                        <p>
+                            Shorthand property to set values the thickness of the padding area. 
+                            If left is omitted, it is the same as right. If bottom is omitted it is 
+                            the same as top, if right is omitted it is the same as top. The value may 
+                            not be negative
+                        </p>
+                        <hr/>
+                        <p>
+                            Attaches one or more drop-shadows to the box. The property is a comma-separated 
+                            list of shadows, each specified by 2-4 length values, an optional color, and an 
+                            optional 'inset' keyword. Omitted lengths are 0; omitted colors are a user agent 
+                            chosen color.  
+                        </p>
+                        <hr/>
+                    </label>
+                </div>
+            </div>
+        </div>
+</body>
